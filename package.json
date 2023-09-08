@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://GoitStudentsWorks.github.io/js_87_Black-Chaos",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-kodersJS/",
+    "build": "vite build --base=/js_87_Black-Chaos/",
     "preview": "vite preview"
   },
   "devDependencies": {

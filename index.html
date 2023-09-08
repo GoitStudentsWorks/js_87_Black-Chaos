@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_87_Black-Chaos/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    
+    <script type="module" crossorigin src="/js_87_Black-Chaos/assets/index-da0d974c.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_87_Black-Chaos/assets/funds-4726f1e8.js">
+    <link rel="stylesheet" href="/js_87_Black-Chaos/assets/index-dca12b82.css">
+  </head>
+  <body>
+    <header class="header-home">
+      <div class="header-container">
+    <a href="./index.html" class="header-logo-link"
+      ><svg class="header-logo">
+         <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-logo"></use></svg>Bookshelf</a
+    >
+    <nav class="navigation">
+      <ul class="site-nav">
+        <li class="site-nav__item index-link">
+          <a href="./index.html" class="site-nav__link_active">Home</a>
+        </li>
+        <li class="site-nav__item shop-page-link">
+          <a href="./shop-list.html" class="site-nav__link"> Shopping list<svg class="site-nav__logo">   
+            <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-basket"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <label class="toggle-theme common-toggle">
+      <input type="checkbox" />
+      <span class="check"></span>
+    </label>
+    <button
+      class="sign-up-button"
+      type="button"
+      data-modal-open
+      aria-label="sign in"
+    >
+      <span class="sign-up-button_text">Sign up</span>
+      <svg class="sign-up-button_icon" width="20" height="20">
+        <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-log-in-out-arrow-right"></use>
+      </svg>
+    </button>
+    <button type="button" class="burger-menu">
+      <svg class="burger-menu__icon">
+        <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+    <ul class="user-bar js-user-bar visually-hidden">
+      <li class="user-bar-item">
+        <button
+          class="user-bar-button js-user-bar-button"
+          type="button"
+          aria-label="user bar button"
+        >
+          <svg class="user-bar-button-icon" width="37" height="37">
+            <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-logo"></use>icon-unknown
+          </svg>
+          <span class="user-bar-button-text"></span>
+          <svg class="user-bar-button-arrow-icon" width="23" height="26">
+                <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-logined-caret-down"></use>
+          </svg>
+        </button>
+        <ul class="dropdown">
+          <li class="dropdown-list-item">
+            <button
+              class="log-out-button js-log-out-button"
+              type="button"
+              aria-label="Log out"
+            >
+              <span class="log-out-button-text">Log out</span>
+              <svg class="log-out-button-icon" width="20" height="20">
+                <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-logined-caret-down"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-menu-container">
+    <div class="burger-container">
+      <div class="mobile-menu__header">
+        <a href="/src/index.html" class="header-logo-link"
+          ><svg class="header-logo">
+            <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-logo"></use></svg
+          >Bookshelf</a
+        >
+        <label class="toggle-theme common-toggle">
+          <input type="checkbox" />
+          <span class="check"></span>
+        </label>
+        <button type="button" class="mobile-menu__button">
+          <svg class="mobile-menu__icon">
+            <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <button
+        class="sign-up-button-burger"
+        type="button"
+        data-modal-open
+        aria-label="sign in"
+      >
+        <span class="sign-up-button_text">Sign up</span>
+        <svg class="sign-up-button_icon" width="20" height="20">
+          <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#golder-arrow-right"></use>
+        </svg>
+      </button>
+      <nav class="navigation-burger">
+        <ul class="site-nav-burger">
+          <li class="site-nav__item_active">
+            <a href="/src/index.html" class="site-nav__link_active">HOME</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="./shopping-list.html" class="site-nav__link"
+              >SHOPPING LIST<svg class="site-nav__logo">
+                <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-uil_cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="log-out-button"
+        type="button"
+        data-modal-open
+        aria-label="sign in">
+        <span class="log-out-button_text">Log out</span>
+        <svg class="log-out-button_icon" width="20" height="20">
+          <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#golder-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+    </header>
+
+    <main>
+      <section class="library">
+        <div class="container">
+          <div class="list">
+            <div class="categories-container">
+  <ul class="categories-elements">
+    <li class="categories-list">
+      <a class="category-link active" href="#">All categories</a>
+    </li>
+  </ul>
+</div>
+
+            <div class="support-wrapper">
+  <div class="support-title">
+    <span class="support-paragraph">Support Ukraine</span>
+    <svg class="ukraine-emblem" width="20" height="32">
+      <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-support-title-symbol"></use>
+    </svg>
+  </div>
+  <div class="funds-container">
+    <ul class="support-funds-list"></ul>
+  </div>
+</div>
+
+          </div>
+          <div class="category-wrapper"></div>
+<a href="#" id="btn-to-top">
+  <div>
+    <svg width="64" height="64">
+      <use class="scroll-up-arrow" href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-scroll-up"></use>
+    </svg>
+  </div>
+</a>
+
+        </div>
+      </section>
+    </main>
+
+    <div class="start-backdrop is-hidden">
+      <div class="start-modal">
+  <button type="button" class="start-close-btn">
+    <svg class="start-close-btn-svg" width="28" height="28">
+      <use class="start-close-icon" href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <form class="start-form" name="start-form">
+    <div class="start-modal-intup-el">
+      <input class="start-input" type="text" name="name" placeholder="NAME" />
+    </div>
+    <div class="start-modal-intup-el">
+      <input
+        class="start-input"
+        type="email"
+        name="email"
+        placeholder="EMAIL"
+      />
+      <svg class="input-icon" width="28" height="28">
+        <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-mail"></use>
+      </svg>
+    </div>
+    <div class="start-modal-intup-el">
+      <input
+        class="start-input"
+        type="password"
+        name="password"
+        placeholder="PASSWORD"
+      />
+      <svg class="input-icon" width="28" height="28">
+        <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-lock"></use>
+      </svg>
+    </div>
+
+    <button class="start-form-btn" type="submit">SIGN UP</button>
+  </form>
+  <div class="start-up-in">
+    <a class="start-up-text" href="">SIGN UP</a>
+    <a class="start-in-text" href="">SIGN IN</a>
+  </div>
+</div>
+
+    </div>
+
+    <div class="popup-backdrop">
+      <div class="container-info-book" id="myModal">
+    <button
+      class="close-btn js-modal-close"
+      type="button"
+      aria-label="close-icon"
+      data-modal-close
+    >
+      <svg class="close-icon" width="28" height="28" stroke="var(--border)">
+        <use href="/js_87_Black-Chaos/assets/icons-62b1adf4.svg#icon-x-close"></use>
+      </svg>
+    </button> 
+     
+    <div class="content">
+        <!-- <img class="img bookim" src="" alt="Book Image" />
+        <div class="text-content">
+            <h3 class = "book-tittle"></h3>
+            <p class = "book-authoor"></p>
+            <p class="book-descripption"></p>
+            <ul class="list-shops">
+                <li class="trading-platform amazon-platform">
+                    <a class="link-shop" href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155" target="_blank">
+                        <picture>
+                            <source 
+                            srcset="./img/internet-shops/amazon@1x.avif 1x,
+                            ./img/internet-shops/amazon@2x.avif 2x" media="(min-width: 768px)" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/amazon@1x.png 1x,
+                            ./img/internet-shops/amazon@1x.png 2x" media="(min-width: 768px)" type="image/png" />
+                            <source 
+                            srcset="./img/internet-shops/amazon@1x.avif 1x,
+                            ./img/internet-shops/amazon@2x.avif 2x" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/amazon@1x.png 1x,
+                            ./img/internet-shops/amazon@1x.png 2x" type="image/png" />
+                            <img 
+                                src="./img/internet-shops/amazon@1x.avif" 
+                                alt="Amazon logo"
+                                width="62"
+                                height="19"
+                                loading="lazy" />
+                        </picture>
+                    </a>
+                </li>
+                <li class="trading-platform">
+                    <a class="link-shop" href="https://www.apple.com/ua/apple-books/" target="_blank">
+                        <picture>
+                            <source 
+                            srcset="./img/internet-shops/book@1x.avif 1x,
+                            ./img/internet-shops/book@2x.avif 2x" media="(min-width: 768px)" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/book@1x.png 1x,
+                            ./img/internet-shops/book@2x.png 2x" media="(min-width: 768px)" type="image/png" />
+                            <source 
+                            srcset="./img/internet-shops/book@1x.avif 1x,
+                            ./img/internet-shops/book@2x.avif 2x" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/book@1x.png 1x,
+                            ./img/internet-shops/book@2x.png 2x" type="image/png" />
+                            <img 
+                                src="./img/internet-shops/book@1x.avif" 
+                                alt="Apple books logo"
+                                width="33"
+                                height="32"
+                                loading="lazy" />
+                        </picture>
+                    </a>
+                </li>
+                <li class="trading-platform">
+                    <a class="link-shop" href="./index.html" target="_blank">
+                        <picture>
+                            <source 
+                            srcset="./img/internet-shops/book-shop@1x.avif 1x,
+                            ./img/internet-shops/book-shop@2x.avif 2x" media="(min-width: 768px)" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/book-shop@1x.png 1x,
+                            ./img/internet-shops/book-shop@2x.png 2x" media="(min-width: 768px)" type="image/png" />
+                            <source 
+                            srcset="./img/internet-shops/book-shop@1x.avif 1x,
+                            ./img/internet-shops/book-shop@2x.avif 2x" type="image/avif" />
+                            <source 
+                            srcset="./img/internet-shops/book-shop@1x.png 1x,
+                            ./img/internet-shops/book-shop@2x.png 2x" type="image/png" />
+                            <img 
+                                src="./img/internet-shops/book-shop@1x.avif" 
+                                alt="Book shop logo"
+                                width="38"
+                                height="36"
+                                loading="lazy" />
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    
+    <button class="add-btn" type="submit">Add to shopping list</button>
+    <p id="shoppingListMessage" class="shopping-btn-messege">Congratulations! You have added the book to the shopping list. To delete, press the button "Remove from the shopping list".</p>
+</div>
+    </div>
+
+    
+  </body>
+</html>
